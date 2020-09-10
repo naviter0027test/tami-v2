@@ -11,7 +11,16 @@ class ProductRepository
         $product = new Product();
         $product->name = isset($params['name']) ? $params['name'] : '';
         $product->nameEn = isset($params['nameEn']) ? $params['nameEn'] : '';
-        $product->email = isset($params['email']) ? $params['email'] : '';
+        if(isset($params['email'])) {
+            foreach($params['email'] as $ei => $email)
+                if(trim($email) == '')
+                    unset($params['email'][$ei]);
+                else
+                    $params['email'][$ei] = trim($email);
+            $product->emailMulti = implode(',', $params['email']);
+        } else {
+            $product->emailMulti = '';
+        }
         $product->info = isset($params['info']) ? $params['info'] : '';
         $product->infoEn = isset($params['infoEn']) ? $params['infoEn'] : '';
         $product->active = isset($params['active']) ? $params['active'] : 1;
@@ -101,7 +110,17 @@ class ProductRepository
             $product->account = $params['account'];
         $product->name = isset($params['name']) ? $params['name'] : '';
         $product->nameEn = isset($params['nameEn']) ? $params['nameEn'] : '';
-        $product->email = isset($params['email']) ? $params['email'] : '';
+        \Log::info($params);
+        if(isset($params['email'])) {
+            foreach($params['email'] as $ei => $email)
+                if(trim($email) == '')
+                    unset($params['email'][$ei]);
+                else
+                    $params['email'][$ei] = trim($email);
+            $product->emailMulti = implode(',', $params['email']);
+        } else {
+            $product->emailMulti = '';
+        }
         $product->info = isset($params['info']) ? $params['info'] : '';
         $product->infoEn = isset($params['infoEn']) ? $params['infoEn'] : '';
         if(isset($params['active']) == true)

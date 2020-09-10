@@ -18,7 +18,10 @@
                 <h5><span>產品名稱(英文)</span></h5>
                 <p> <input type="text" name="nameEn" /> </p>
                 <h5><span>產品聯絡人E-Mail</span></h5>
-                <p> <input type="email" name="email" /> </p>
+                <p>
+                    <input type="email" name="email[]" />
+                    <a href="#" class="addEmail"><i class="glyphicon glyphicon-add" >+</i></a>
+                </p>
                 <h5><span>產品圖片</span></h5>
                 <p> <input type="file" name="picture1" /> </p>
                 <h5><span>產品左下圖片1</span></h5>
