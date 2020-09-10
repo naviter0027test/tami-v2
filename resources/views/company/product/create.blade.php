@@ -26,9 +26,15 @@
                 <h5><span>產品左下圖片2</span></h5>
                 <p> <input type="file" name="picture3" /> </p>
                 <h5><span>亮點資訊</span></h5>
-                <p> <textarea type="text" name="info" ></textarea> </p>
+                <p>
+                    <div id="info" ></div>
+                    <input type="hidden" name="info" />
+                </p>
                 <h5><span>亮點資訊(英文)</span></h5>
-                <p> <textarea type="text" name="infoEn" ></textarea> </p>
+                <p>
+                    <div id="infoEn" ></div>
+                    <input type="hidden" name="infoEn" />
+                </p>
                 <h5><span>DM</span></h5>
                 <p> <input type="file" name="dm" /> </p>
                 <h5><span>是否啟用</span></h5>
@@ -53,6 +59,7 @@
     <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="/lib/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="/lib/jquery-validation/dist/localization/messages_zh_TW.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
     <script src="/js/company/left.js"></script>
     <script src="/js/company/product/create.js"></script>
 </html>

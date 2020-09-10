@@ -47,9 +47,15 @@
                     更換如下:
                 <p> <input type="file" name="picture3" /> </p>
                 <h5><span>亮點資訊</span></h5>
-                <p> <textarea type="text" name="info" >{{ $result['product']->info }}</textarea> </p>
+                <p>
+                    <div id="info" ></div>
+                    <input type="hidden" name="info" value="{{ $result['product']->info }}" />
+                </p>
                 <h5><span>亮點資訊(英文)</span></h5>
-                <p> <textarea type="text" name="infoEn" >{{ $result['product']->infoEn }}</textarea> </p>
+                <p>
+                    <div id="infoEn" ></div>
+                    <input type="hidden" name="infoEn" value="{{ $result['product']->infoEn }}" />
+                </p>
                 <h5><span>DM</span></h5>
                 @if($result['product']->dm != '')
                     <a href="/product{{ $result['product']->dm }}"  >連結</a> <br />
@@ -82,6 +88,7 @@
     <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="/lib/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="/lib/jquery-validation/dist/localization/messages_zh_TW.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
     <script src="/js/company/left.js"></script>
     <script src="/js/company/product/edit.js"></script>
 </html>
