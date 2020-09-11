@@ -17,7 +17,7 @@
 <body class="body_company">
 
 <div class="company_list {{ $company->frontModeShow }}">
-        <div class="version"><a href="?lan=cn" class="active">简中</a><a href="?lan=en">EN</a></div>                
+        <div class="version"><a href="/cn/front/company/{{ $company->id }}" class="active">简中</a><a href="/en/front/company/{{ $company->id }}">EN</a></div>                
 	<div class="transform">
 
         <a href="/" class="btn_back"><img src="/images/icon_back_arrow.svg"></a>
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="action">
-                <a href="/front/company/{{ $company->id }}/product">PRODUCTS LIST<i></i></a>
+                <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}/product">PRODUCTS LIST<i></i></a>
             </div>
         </div>
     </div>    

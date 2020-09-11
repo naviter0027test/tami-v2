@@ -13,8 +13,9 @@ use Exception;
 
 class FrontController extends Controller
 {
-    public function index(Request $request) {
+    public function index(Request $request, $lan = 'cn') {
         $params = $request->all();
+        $params['lan'] = $lan;
         if(isset($params['lan']) == false && Session::has('lan') == true) {
             $params['lan'] = Session::get('lan');
             \App::setLocale($params['lan']);
@@ -82,8 +83,9 @@ class FrontController extends Controller
         return view($frontDir. '.index', ['result' => $params]);
     }
 
-    public function company(Request $request, $companyId) {
+    public function company(Request $request, $lan = 'cn', $companyId) {
         $params = $request->all();
+        $params['lan'] = $lan;
         if(isset($params['lan']) == false && Session::has('lan') == true) {
             $params['lan'] = Session::get('lan');
             \App::setLocale($params['lan']);
@@ -151,11 +153,12 @@ class FrontController extends Controller
             return view('front.company_not', ['result' => $result]);
         }
         $frontDir = env('FRONT_DIR', 'front');
-        return view($frontDir. '.company', ['company' => $company]);
+        return view($frontDir. '.company', ['company' => $company, 'result' => $params]);
     }
 
-    public function product(Request $request, $companyId) {
+    public function product(Request $request, $lan = 'cn', $companyId) {
         $params = $request->all();
+        $params['lan'] = $lan;
         if(isset($params['lan']) == false && Session::has('lan') == true) {
             $params['lan'] = Session::get('lan');
             \App::setLocale($params['lan']);
@@ -212,11 +215,11 @@ class FrontController extends Controller
             switch($params['lan']) {
             case 'cn':
                 $products[$i]->nameShow = $product->name;
-                $products[$i]->infoShow = nl2br($product->info);
+                $products[$i]->infoShow = $product->info;
                 break;
             case 'en':
                 $products[$i]->nameShow = $product->nameEn;
-                $products[$i]->infoShow = nl2br($product->infoEn);
+                $products[$i]->infoShow = $product->infoEn;
                 break;
             }
         }

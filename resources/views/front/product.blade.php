@@ -19,7 +19,16 @@
 <body class="body_detail body_company">
 
 <div class="company_list {{ $company->frontModeShow }}">
-        <div class="version"><a href="?lan=cn" class="active">简中</a><a href="?lan=en">EN</a></div>                
+        <div class="version"><a href="/cn/" class="active">简中</a><a href="/en/">EN</a></div>                
+@if($result['lan'] == 'en')
+<!-- google 翻譯小工具 -->
+<div id="google_translate_element" class="version" style="right: 140px; top:5px;"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,id,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- google 翻譯小工具 -->
+@endif
 	<div class="transform">
         <a href="/" class="btn_back"><img src="/images/icon_back_arrow.svg"></a>
         <div class="outer">

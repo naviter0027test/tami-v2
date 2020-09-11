@@ -32,7 +32,7 @@
             <div class="mobile_div">  
             	<div class="overly" title="Close with clicked !!" alt="Close with clicked !!"></div>
                 <div class="mobile_black"><img src="images/icon_back_arrow_mobile.svg"></div>
-                <div class="version"><a href="?lan=cn" class="active">简中</a><a href="?lan=en">EN</a></div>                
+                <div class="version"><a href="cn/" class="active">简中</a><a href="en/">EN</a></div>                
                 <div id="block01" class="block_img" data-id="popup01">
                     <img src="images/platform_01_block.png" class="block"/>
                     <img src="{{ $result['area4'] }}" class="title"/>
@@ -130,7 +130,7 @@
                         <div class="list_item">
                         @foreach($result['companyAreas']['鞋底加工及橡塑胶制鞋设备']['companies'] as $company)
                             <div class="item">
-                                <a href="front/company/{{ $company->id }}">
+                                <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
                                     <div class="info">
                                         <h3>{{ $company->nameShow }}</h3>
@@ -222,7 +222,7 @@
                         <div class="list_item">
                         @foreach($result['companyAreas']['鞋面成型及鞋帮机']['companies'] as $company)
                             <div class="item">
-                                <a href="front/company/{{ $company->id }}">
+                                <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
                                     <div class="info">
                                         <h3>{{ $company->nameShow }}</h3>
@@ -333,7 +333,7 @@
                         <div class="list_item">
                         @foreach($result['companyAreas']['自动化设备与整厂规划']['companies'] as $company)
                             <div class="item">
-                                <a href="front/company/{{ $company->id }}">
+                                <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
                                     <div class="info">
                                         <h3>{{ $company->nameShow }}</h3>
