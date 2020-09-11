@@ -154,19 +154,21 @@ class ContactRepository
             ->first();
         $product = Product::where('id', '=', $params['productId'])
             ->first();
-        if(trim($product->email) != '')
-            \Mail::send('email.contactNotify', ['company' => $company, 'params' => $params], function($message) use ($company, $product) {
-                $fromAddr = Config::get('mail.from.address');
-                $fromName = Config::get('mail.from.name');
-                $testTitle = env('APP_ENV') == 'local' ? '[Test] ' : '';
-                $mailTitle = env('CONTACT_TITLE', '台湾鞋机线上展');
-                $appSmall = env('APP_SMALL');
-                $message->from($fromAddr, $fromName);
-                \Log::info('mail product');
-                $message->to($product->email, $company->name)->subject("$testTitle <$appSmall $mailTitle 询问信函>");
-            });
-        else
-            \Log::info('product id:['. $product->id. '], name:['. $product->name. '] email is empty');
+        $emails = explode(',', $product->emailMulti);
+        foreach($emails as $email)
+            if(trim($email) != '')
+                \Mail::send('email.contactNotify', ['company' => $company, 'params' => $params], function($message) use ($company, $product, $email) {
+                    $fromAddr = Config::get('mail.from.address');
+                    $fromName = Config::get('mail.from.name');
+                    $testTitle = env('APP_ENV') == 'local' ? '[Test] ' : '';
+                    $mailTitle = env('CONTACT_TITLE', '台湾鞋机线上展');
+                    $appSmall = env('APP_SMALL');
+                    $message->from($fromAddr, $fromName);
+                    \Log::info('mail product');
+                    $message->to($email, $company->name)->subject("$testTitle <$appSmall $mailTitle 询问信函>");
+                });
+            else
+                \Log::info('product id:['. $product->id. '], name:['. $product->name. '] email is empty');
     }
 
     public function statisticsJobTitleListByAdmin() {
