@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, viewport-fit=cover" />
-<meta name="description" content="{{ $result['description'] }}">
+<meta name="description" content="">
 <meta name="author" content="">
 <meta http-equiv="Cache-Control" content="no-cache">
 
-<title>{{ $result['title'] }}</title>
+<title>{{ $company->nameShow }}</title>
 
 
 <link href="/css/style.css" rel="stylesheet">
