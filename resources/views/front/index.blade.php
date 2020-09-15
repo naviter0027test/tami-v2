@@ -7,7 +7,7 @@
 <meta name="author" content="">
 <meta http-equiv="Cache-Control" content="no-cache">
 
-<title>{{ trans('front/commpany.tami_online') }}</title>
+<title>{{ trans('front/common.tami_online') }}</title>
 
 <link rel="stylesheet" type="text/css" href="owl.carousel/owl.carousel.css">
 <link href="css/style.css" rel="stylesheet">
