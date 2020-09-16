@@ -101,7 +101,7 @@
                         <div class="list_item">
                         @foreach($result['companyAreas']['缝纫机']['companies'] as $company)
                             <div class="item">
-                                <a href="front/company/{{ $company->id }}">
+                                <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
                                     <div class="info">
                                         <h3>{{ $company->nameShow }}</h3>
