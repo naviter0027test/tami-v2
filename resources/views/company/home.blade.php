@@ -44,10 +44,12 @@
                     <a href="/company/contact" class="small-box-footer">&nbsp;</a>
                 </div>
             </div>
+<!--
             <h4 class="col-lg-12 col-xs-12">稱謂 統計</h4>
             <div class="flot-jobtitle" ></div>
             <h4 class="col-lg-12 col-xs-12">產業別 統計</h4>
             <div class="pie-industry" ></div>
+-->
             <div class="pagination paginationCenter">
             </div>
         </div>
