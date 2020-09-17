@@ -113,7 +113,7 @@ function googleTranslateElementInit() {
 <div class="body_overly active"></div>
 <div class="product_detail" >
 	<div class="transform">
-        <a href="/front/company/{{ $company->id }}" class="btn_back"><img src="/images/icon_back_arrow.svg"></a>
+        <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}" class="btn_back"><img src="/images/icon_back_arrow.svg"></a>
         <div class="links">
             <div class="outer">
                 <div class="col01">
