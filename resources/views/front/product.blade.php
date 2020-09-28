@@ -20,7 +20,7 @@
 
 <div class="company_list {{ $company->frontModeShow }}">
         <div class="version"><a href="/cn/" class="active">简中</a><a href="/en/">EN</a></div>                
-@if($result['lan'] == 'en')
+@if(in_array($result['lan'],['en', 'id', 'vi']) == true)
 <!-- google 翻譯小工具 -->
 <div id="google_translate_element" class="version" style="right: 140px; top:5px;"></div><script type="text/javascript">
 function googleTranslateElementInit() {

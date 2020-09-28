@@ -42,6 +42,8 @@ class FrontController extends Controller
                     $params['companyAreas'][$companyArea->name]['companies'][$i]->nameShow = $company->name;
                     break;
                 case 'en':
+                case 'id':
+                case 'vi':
                     $params['companyAreas'][$companyArea->name]['companies'][$i]->nameShow = $company->nameEn;
                     break;
                 }
@@ -68,6 +70,8 @@ class FrontController extends Controller
             }
             break;
         case 'en':
+        case 'id':
+        case 'vi':
             if($frontDir == 'front-v3') {
                 $params['logo'] = 'images/tami-v3/home_logo_eng.png';
                 $params['logoMobile'] = 'images/tami-v3/home_logo_eng_mobile.png';
@@ -140,6 +144,8 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
                 $params['description'] = "第31屆馬來西亞國際橡塑機械暨模具展M'SIA PlAS將於2020年在馬來西亞吉隆坡舉辦，是目前馬來西亞國內規模最大、影響最廣、專業性最強的地區性國際機械展覽盛會，12家來自台灣的優質廠商，立即點擊進入線上展覽會場觀展。";
                 break;
             case 'en':
+            case 'id':
+            case 'vi':
                 $company->nameShow = $company->nameEn;
                 $company->titleShow = $company->titleEn;
                 $company->contactDescShow = nl2br($company->contactDescEn);
@@ -217,6 +223,8 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
             $params['description'] = "第31屆馬來西亞國際橡塑機械暨模具展M'SIA PlAS將於2020年在馬來西亞吉隆坡舉辦，是目前馬來西亞國內規模最大、影響最廣、專業性最強的地區性國際機械展覽盛會，12家來自台灣的優質廠商，立即點擊進入線上展覽會場觀展。";
             break;
         case 'en':
+        case 'id':
+        case 'vi':
             $company->nameShow = $company->nameEn;
             $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
             $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
@@ -233,6 +241,8 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
                 $products[$i]->infoShow = $product->info;
                 break;
             case 'en':
+            case 'id':
+            case 'vi':
                 $products[$i]->nameShow = $product->nameEn;
                 $products[$i]->infoShow = $product->infoEn;
                 break;

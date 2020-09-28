@@ -17,7 +17,12 @@
 <body class="body_company">
 
 <div class="company_list {{ $company->frontModeShow }}">
-        <div class="version"><a href="/cn/front/company/{{ $company->id }}" class="active">简中</a><a href="/en/front/company/{{ $company->id }}">EN</a></div>                
+        <div class="version">
+            <a href="/cn/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'cn' ? 'active' : '' }}">简中</a>
+            <a href="/en/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'en' ? 'active' : '' }}">EN</a>
+            <a href="/id/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'id' ? 'active' : '' }}">Indonesia</a>
+            <a href="/vi/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'vi' ? 'active' : '' }}">Vietnam</a>
+        </div>                
 	<div class="transform">
 
         <a href="/" class="btn_back"><img src="/images/icon_back_arrow.svg"></a>
