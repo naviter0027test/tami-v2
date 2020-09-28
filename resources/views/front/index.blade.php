@@ -33,10 +33,10 @@
             	<div class="overly" title="Close with clicked !!" alt="Close with clicked !!"></div>
                 <div class="mobile_black"><img src="images/icon_back_arrow_mobile.svg"></div>
                 <div class="version">
-                    <a href="cn/" class="{{ $result['lan'] == 'cn' ? 'active' : '' }}">简中</a>
-                    <a href="en/" class="{{ $result['lan'] == 'en' ? 'active' : '' }}">EN</a>
-                    <a href="id/" class="{{ $result['lan'] == 'id' ? 'active' : '' }}">Indonesia</a>
-                    <a href="vi/" class="{{ $result['lan'] == 'vi' ? 'active' : '' }}">Vietnam</a>
+                    <a href="cn/" class="{{ $result['lan'] == 'cn' ? 'active' : '' }}">中文</a>
+                    <a href="en/" class="{{ $result['lan'] == 'en' ? 'active' : '' }}">ENG</a>
+                    <a href="id/" class="{{ $result['lan'] == 'id' ? 'active' : '' }}">IND</a>
+                    <a href="vi/" class="{{ $result['lan'] == 'vi' ? 'active' : '' }}">VIE</a>
                 </div>                
                 <div id="block01" class="block_img" data-id="popup01">
                     <img src="images/platform_01_block.png" class="block"/>

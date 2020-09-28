@@ -60,18 +60,16 @@ class FrontController extends Controller
             } else {
                 $params['logo'] = 'images/home_logo.gif';
                 $params['logoMobile'] = 'images/home_logo_mobile.png';
-                $params['area1'] = 'images/platform_04_title.png';
-                $params['area2'] = 'images/platform_02_title.png';
-                $params['area3'] = 'images/platform_03_title.png';
-                $params['area4'] = 'images/platform_01_title.png';
+                $params['area1'] = 'images/platform_04_title_tw.png';
+                $params['area2'] = 'images/platform_02_title_tw.png';
+                $params['area3'] = 'images/platform_03_title_tw.png';
+                $params['area4'] = 'images/platform_01_title_tw.png';
                 $params['backMobile'] = '../images/tami_01_mobile.jpg';
                 $params['title'] = "M’SIA-PLAS 2020年馬來西亞國際橡塑橡膠暨模具展";
                 $params['description'] = "第31屆馬來西亞國際橡塑機械暨模具展M'SIA PlAS將於2020年在馬來西亞吉隆坡舉辦，是目前馬來西亞國內規模最大、影響最廣、專業性最強的地區性國際機械展覽盛會，12家來自台灣的優質廠商，立即點擊進入線上展覽會場觀展。";
             }
             break;
         case 'en':
-        case 'id':
-        case 'vi':
             if($frontDir == 'front-v3') {
                 $params['logo'] = 'images/tami-v3/home_logo_eng.png';
                 $params['logoMobile'] = 'images/tami-v3/home_logo_eng_mobile.png';
@@ -82,6 +80,40 @@ class FrontController extends Controller
                 $params['area2'] = 'images/platform_02_title_eng.png';
                 $params['area3'] = 'images/platform_03_title_eng.png';
                 $params['area4'] = 'images/platform_01_title_eng.png';
+                $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
+                $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
+                $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
+Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+            }
+            break;
+        case 'id':
+            if($frontDir == 'front-v3') {
+                $params['logo'] = 'images/tami-v3/home_logo_eng.png';
+                $params['logoMobile'] = 'images/tami-v3/home_logo_eng_mobile.png';
+            } else {
+                $params['logo'] = 'images/home_logo_e2.gif';
+                $params['logoMobile'] = 'images/home_logo_mobile.png';
+                $params['area1'] = 'images/platform_04_title_indonesian.png';
+                $params['area2'] = 'images/platform_02_title_indonesian.png';
+                $params['area3'] = 'images/platform_03_title_indonesian.png';
+                $params['area4'] = 'images/platform_01_title_indonesian.png';
+                $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
+                $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
+                $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
+Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+            }
+            break;
+        case 'vi':
+            if($frontDir == 'front-v3') {
+                $params['logo'] = 'images/tami-v3/home_logo_eng.png';
+                $params['logoMobile'] = 'images/tami-v3/home_logo_eng_mobile.png';
+            } else {
+                $params['logo'] = 'images/home_logo_e2.gif';
+                $params['logoMobile'] = 'images/home_logo_mobile.png';
+                $params['area1'] = 'images/platform_04_title_vietbam.png';
+                $params['area2'] = 'images/platform_02_title_vietbam.png';
+                $params['area3'] = 'images/platform_03_title_vietbam.png';
+                $params['area4'] = 'images/platform_01_title_vietbam.png';
                 $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
                 $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
                 $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"

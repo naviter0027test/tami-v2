@@ -18,10 +18,10 @@
 
 <div class="company_list {{ $company->frontModeShow }}">
         <div class="version">
-            <a href="/cn/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'cn' ? 'active' : '' }}">简中</a>
-            <a href="/en/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'en' ? 'active' : '' }}">EN</a>
-            <a href="/id/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'id' ? 'active' : '' }}">Indonesia</a>
-            <a href="/vi/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'vi' ? 'active' : '' }}">Vietnam</a>
+            <a href="/cn/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'cn' ? 'active' : '' }}">中文</a>
+            <a href="/en/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'en' ? 'active' : '' }}">ENG</a>
+            <a href="/id/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'id' ? 'active' : '' }}">IND</a>
+            <a href="/vi/front/company/{{ $company->id }}" class="{{ $result['lan'] == 'vi' ? 'active' : '' }}">VIE</a>
         </div>                
 	<div class="transform">
 
