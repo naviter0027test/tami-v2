@@ -253,6 +253,11 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
             $company->nameShow = $company->name;
             $params['title'] = "M’SIA-PLAS 2020年馬來西亞國際橡塑橡膠暨模具展";
             $params['description'] = "第31屆馬來西亞國際橡塑機械暨模具展M'SIA PlAS將於2020年在馬來西亞吉隆坡舉辦，是目前馬來西亞國內規模最大、影響最廣、專業性最強的地區性國際機械展覽盛會，12家來自台灣的優質廠商，立即點擊進入線上展覽會場觀展。";
+            $params['detailBtnBg01'] = "/images/detail_btn_01_tw.png";
+            $params['detailBtnBg02'] = "/images/detail_btn_02_tw.png";
+            $params['detailBtnBg03'] = "/images/detail_btn_03_tw.png";
+            $params['detailBtnBg04'] = "/images/detail_btn_04_tw.png";
+            $params['detailBtnBg05'] = "/images/detail_btn_05_tw.png";
             break;
         case 'en':
         case 'id':
@@ -261,6 +266,11 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
             $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
             $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
                 Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+            $params['detailBtnBg01'] = "/images/detail_btn_01_en.png";
+            $params['detailBtnBg02'] = "/images/detail_btn_02_en.png";
+            $params['detailBtnBg03'] = "/images/detail_btn_03_en.png";
+            $params['detailBtnBg04'] = "/images/detail_btn_04_en.png";
+            $params['detailBtnBg05'] = "/images/detail_btn_05_en.png";
             break;
         }
 

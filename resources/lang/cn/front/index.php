@@ -5,8 +5,8 @@ return [
     'commpany_area3' => '鞋面成型及鞋帮机',
     'commpany_area4' => '缝纫机',
     'browse_amount' => 'views',
-    '2020' => '2020年',
-    'international_shoes' => '广州国际鞋类',
-    'leather_exhi' => '皮革及工业设备展',
-    'taiwan_online' => '线上台湾馆',
+    '2020' => '2 0 2 0 年',
+    'international_shoes' => '台 灣 鞋 機 拓 銷',
+    'leather_exhi' => '越 南 及 印 尼',
+    'taiwan_online' => '線 上 台 灣 館',
 ];

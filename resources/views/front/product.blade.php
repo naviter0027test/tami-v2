@@ -117,13 +117,13 @@ function googleTranslateElementInit() {
         <div class="links">
             <div class="outer">
                 <div class="col01">
-                    <a href="/" class="btn_home"><img src="/images/detail_btn_bg_01.png"><b>{{ trans('front/product.go_home') }}</b></a>
-                    <a href="#" class="btn_contact"><img src="/images/detail_btn_bg_02.png"><b>{{ trans('front/product.contact_info') }}</b></a>
+                    <a href="/" class="btn_home"><img src="{{ $result['detailBtnBg01'] }}"><b></b></a>
+                    <a href="#" class="btn_contact"><img src="{{ $result['detailBtnBg02'] }}"><b></b></a>
                 </div>
                 <div class="col02">
-                    <a href="{{ $company->contactLink4 }}" class="btn_website"><img src="/images/detail_btn_bg_03.png"><b>{{ trans('front/product.website') }}</b></a>
-                    <a target="_blank" href="#" class="btn_cate"><img src="/images/detail_btn_bg_04.png"><b>{{ trans('front/product.catalog') }}</b></a>
-                    <a href="#" class="btn_share"><img src="/images/detail_btn_bg_05.png"><b>{{ trans('front/product.share') }}</b></a>
+                    <a href="{{ $company->contactLink4 }}" class="btn_website"><img src="{{ $result['detailBtnBg03'] }}"><b></b></a>
+                    <a target="_blank" href="#" class="btn_cate"><img src="{{ $result['detailBtnBg04'] }}"><b></b></a>
+                    <a href="#" class="btn_share"><img src="{{ $result['detailBtnBg05'] }}"><b></b></a>
                 </div>
             </div>
         </div>

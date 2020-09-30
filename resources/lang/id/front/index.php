@@ -5,8 +5,8 @@ return [
     'commpany_area3' => 'Vamp Making and Lasting Machinery',
     'commpany_area4' => 'Sewing Machine',
     'browse_amount' => 'views',
-    '2020' => '2020',
-    'international_shoes' => 'International Shoes &',
-    'leather_exhi' => 'Leather Exhibition',
-    'taiwan_online' => 'Taiwan Online Pavilion',
+    '2020' => 'Paviliun Online Pembuatan',
+    'international_shoes' => 'Sepatu Taiwan 2020',
+    'leather_exhi' => 'Penyedia Sol untuk',
+    'taiwan_online' => 'Vietnam dan Indonesia',
 ];
