@@ -19,7 +19,18 @@
 <body class="body_detail body_company">
 
 <div class="company_list {{ $company->frontModeShow }}">
-        <div class="version"><a href="/cn/" class="active">中文</a><a href="/en/">ENG</a></div>                
+        <div class="version">
+        @if(in_array($result['lan'],['en', 'id', 'vi']) == false)
+            <a href="#" class="active"
+        @elseif(in_array($result['lan'],['en', 'id', 'vi']) == true)
+            <a href="/cn/" class="active"
+            style="position: static;"
+        @endif
+            >中文</a>
+        @if(in_array($result['lan'],['en', 'id', 'vi']) == false)
+            <a href="/en/">ENG</a>
+        @endif
+        </div>                
 @if(in_array($result['lan'],['en', 'id', 'vi']) == true)
 <!-- google 翻譯小工具 -->
 <div id="google_translate_element" class="version" style="right: 140px; top:5px;"></div><script type="text/javascript">
