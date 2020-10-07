@@ -258,6 +258,7 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
             $params['detailBtnBg03'] = "/images/detail_btn_03_tw.png";
             $params['detailBtnBg04'] = "/images/detail_btn_04_tw.png";
             $params['detailBtnBg05'] = "/images/detail_btn_05_tw.png";
+            $params['detailBtnBg06'] = "/images/detail_btn_06_tw.png";
             break;
         case 'en':
         case 'id':
@@ -271,6 +272,7 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
             $params['detailBtnBg03'] = "/images/detail_btn_03_en.png";
             $params['detailBtnBg04'] = "/images/detail_btn_04_en.png";
             $params['detailBtnBg05'] = "/images/detail_btn_05_en.png";
+            $params['detailBtnBg06'] = "/images/detail_btn_06_en.png";
             break;
         }
 

@@ -47,12 +47,10 @@
                         <option value="0">否</option>
                     </select> 
                 </p>
-<!--
                 <h5>影片(超連結，非內嵌)</h5>
                 <p> 
                     <input type="text" name="video" /> 
                 </p>
--->
                 <p class=""> <button class="btn">新增</button> </p>
             </form>
         </div>

@@ -15,6 +15,8 @@ $(document).ready(function() {
 
     var pdfHref = $('.pdf'+nowProductNum).val();
     $('.btn_cate').attr('href', '/product'+pdfHref);
+    var videoHref = $('.video'+nowProductNum).val().trim();
+    $('.btn_video').attr('href', videoHref);
 
     switch($("meta[name=lan]").attr('content')) {
         case 'en':
@@ -40,23 +42,33 @@ $(document).ready(function() {
         else 
             --nowProductNum;
         pdfHref = $('.pdf'+nowProductNum).val();
+        videoHref = $('.video'+nowProductNum).val();
         if(pdfHref == '')
             $('.btn_cate').attr('href', '#');
         else
             $('.btn_cate').attr('href', '/product'+pdfHref);
+        if(videoHref == '')
+            $('.btn_video').attr('href', '#');
+        else
+            $('.btn_video').attr('href', videoHref);
         return false;
     });
 
     $('.owl-next').on('click', function() {
-        if(nowProductNum >= maxProductNum)
+        if(nowProductNum + 1 >= maxProductNum)
             nowProductNum = 0;
         else 
             ++nowProductNum;
         pdfHref = $('.pdf'+nowProductNum).val();
+        videoHref = $('.video'+nowProductNum).val();
         if(pdfHref == '' || typeof(pdfHref) == 'undefined')
             $('.btn_cate').attr('href', '#');
         else
             $('.btn_cate').attr('href', '/product'+pdfHref);
+        if(videoHref == '')
+            $('.btn_video').attr('href', '#');
+        else
+            $('.btn_video').attr('href', videoHref);
         return false;
     });
 

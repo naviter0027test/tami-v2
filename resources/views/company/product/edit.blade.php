@@ -76,12 +76,10 @@
                         <option value="0" {{ $result['product']->active == '0' ? 'selected="selected"' : '' }} >否</option>
                     </select> 
                 </p>
-<!--
                 <h5>影片(超連結，非內嵌)</h5>
                 <p> 
                     <input type="text" name="video" value="{{ $result['product']->video }}" /> 
                 </p>
--->
                 <p class=""> <button class="btn">編輯</button> </p>
             </form>
 

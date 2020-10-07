@@ -135,6 +135,7 @@ function googleTranslateElementInit() {
                     <a href="{{ $company->contactLink4 }}" class="btn_website"><img src="{{ $result['detailBtnBg03'] }}"><b></b></a>
                     <a target="_blank" href="#" class="btn_cate"><img src="{{ $result['detailBtnBg04'] }}"><b></b></a>
                     <a href="#" class="btn_share"><img src="{{ $result['detailBtnBg05'] }}"><b></b></a>
+                    <a target="_blank" href="#" class="btn_video"><img src="{{ $result['detailBtnBg06'] }}"><b></b></a>
                 </div>
             </div>
         </div>
@@ -146,6 +147,7 @@ function googleTranslateElementInit() {
                 <div class="item">
                     <input type="hidden" class="pdf{{ $i }}" value="{{ $product->dm }}" />
                     <input type="hidden" class="product{{ $i }}" value="{{ $product->id }}" />
+                    <input type="hidden" class="video{{ $i }}" value="{{ $product->video }}" />
                     <div class="outer">
                         <div class="col01">
                             <div class="box">
