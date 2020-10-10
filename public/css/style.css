@@ -462,8 +462,8 @@ h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0;}
 	
 	.home_list .outer .block_img img {  width: 75%;}	
 	.home_list .outer #block01 {
-		left: calc(1280px * 0.06);
-		top: calc(1280px * 0.12);
+		left: calc(1280px * 0.0001);
+		top: calc(1280px * 0.05);
 	}
 	.home_list .outer #block02 {
 		left: calc(1280px * 0.31);
