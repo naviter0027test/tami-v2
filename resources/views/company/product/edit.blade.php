@@ -35,6 +35,7 @@
                 @endif
                     更換如下:
                 <p> <input type="file" name="picture1" /> </p>
+<!--
                 <h5><span>產品左下圖片1</span></h5>
                 @if($result['product']->picture2 != '')
                     <img src="/product{{ $result['product']->picture2 }}" class="custPic" /> <br />
@@ -51,6 +52,7 @@
                 @endif
                     更換如下:
                 <p> <input type="file" name="picture3" /> </p>
+-->
                 <h5><span>亮點資訊</span></h5>
                 <p>
                     <div id="info" ></div>

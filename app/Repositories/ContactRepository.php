@@ -161,11 +161,11 @@ class ContactRepository
                     $fromAddr = Config::get('mail.from.address');
                     $fromName = Config::get('mail.from.name');
                     $testTitle = env('APP_ENV') == 'local' ? '[Test] ' : '';
-                    $mailTitle = env('CONTACT_TITLE', '台湾鞋机线上展');
+                    $mailTitle = env('CONTACT_TITLE', '台灣鞋機線上展');
                     $appSmall = env('APP_SMALL');
                     $message->from($fromAddr, $fromName);
                     \Log::info('mail product');
-                    $message->to($email, $company->name)->subject("$testTitle <$appSmall $mailTitle 询问信函>");
+                    $message->to($email, $company->name)->subject("$testTitle <$appSmall $mailTitle 詢問信函>");
                 });
             else
                 \Log::info('product id:['. $product->id. '], name:['. $product->name. '] email is empty');
