@@ -41,6 +41,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['check.admin']], function() 
     Route::get('company/edit/{id}', 'Admin\CompanyController@edit');
     Route::post('company/edit/{id}', 'Admin\CompanyController@update');
     Route::get('company/remove/{id}', 'Admin\CompanyController@remove');
+    Route::get('company/remove/{id}/info-pic/{infoId}', 'Admin\CompanyController@removeCompanyInfo');
 
     Route::get('contact', 'Admin\ContactController@index');
     Route::get('contact/edit/{id}', 'Admin\ContactController@edit');
@@ -59,6 +60,8 @@ Route::group(['prefix' => 'company', 'middleware' => ['check.company']], functio
 
     Route::get('edit', 'Company\UserController@edit');
     Route::post('edit', 'Company\UserController@update');
+    Route::get('remove/info-pic/{infoId}', 'Company\UserController@removeCompanyInfo');
+
     Route::get('product', 'Company\ProductController@index');
     Route::get('product/create', 'Company\ProductController@createPage');
     Route::post('product/create', 'Company\ProductController@create');

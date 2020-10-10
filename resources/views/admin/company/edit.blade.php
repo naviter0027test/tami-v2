@@ -92,6 +92,9 @@
                     無<br />
                 @endif
                     更換如下:
+                    @if($result['company']->infoPath1 != '')
+                    (<a href="/admin/company/remove/{{ $result['company']->id }}/info-pic/1">刪除</a>)
+                    @endif
                     <select type="text" name="infoMode1" class="infoMode hidden" infoNum="1"> 
                         <option value="1" {{ $result['company']->infoMode1 == '1' ? 'selected="selected"' : '' }} >圖片上傳</option>
                         <option value="2" {{ $result['company']->infoMode1 == '2' ? 'selected="selected"' : '' }} >影片網址(Youtube)</option>
@@ -109,6 +112,9 @@
                     無<br />
                 @endif
                     更換如下:
+                    @if($result['company']->infoPath2 != '')
+                    (<a href="/admin/company/remove/{{ $result['company']->id }}/info-pic/2">刪除</a>)
+                    @endif
                     <select type="text" name="infoMode2" class="infoMode hidden" infoNum="2"> 
                         <option value="1" {{ $result['company']->infoMode2 == '1' ? 'selected="selected"' : '' }} >圖片上傳</option>
                         <option value="2" {{ $result['company']->infoMode2 == '2' ? 'selected="selected"' : '' }} >影片網址(Youtube)</option>
@@ -126,6 +132,9 @@
                     無<br />
                 @endif
                     更換如下:
+                    @if($result['company']->infoPath3 != '')
+                    (<a href="/admin/company/remove/{{ $result['company']->id }}/info-pic/3">刪除</a>)
+                    @endif
                     <select type="text" name="infoMode3" class="infoMode hidden" infoNum="3"> 
                         <option value="1" {{ $result['company']->infoMode3 == '1' ? 'selected="selected"' : '' }} >圖片上傳</option>
                         <option value="2" {{ $result['company']->infoMode3 == '2' ? 'selected="selected"' : '' }} >影片網址(Youtube)</option>
@@ -143,6 +152,9 @@
                     無<br />
                 @endif
                     更換如下:
+                    @if($result['company']->infoPath4 != '')
+                    (<a href="/admin/company/remove/{{ $result['company']->id }}/info-pic/4">刪除</a>)
+                    @endif
                     <select type="text" name="infoMode4" class="infoMode hidden" infoNum="4"> 
                         <option value="1" {{ $result['company']->infoMode4 == '1' ? 'selected="selected"' : '' }} >圖片上傳</option>
                         <option value="2" {{ $result['company']->infoMode4 == '2' ? 'selected="selected"' : '' }} >影片網址(Youtube)</option>
@@ -160,6 +172,9 @@
                     無<br />
                 @endif
                     更換如下:
+                    @if($result['company']->infoPath5 != '')
+                    (<a href="/admin/company/remove/{{ $result['company']->id }}/info-pic/5">刪除</a>)
+                    @endif
                     <select type="text" name="infoMode5" class="infoMode hidden" infoNum="5"> 
                         <option value="1" {{ $result['company']->infoMode5 == '1' ? 'selected="selected"' : '' }} >圖片上傳</option>
                         <option value="2" {{ $result['company']->infoMode5 == '2' ? 'selected="selected"' : '' }} >影片網址(Youtube)</option>

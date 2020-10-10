@@ -184,4 +184,23 @@ class UserController extends Controller
 
         return view('company.forgetResult', ['res' => $res] );
     }
+
+    public function removeCompanyInfo(Request $request, $infoId) {
+        $company = Session::get('company');
+        $companyId = $company->id;
+        $files = [];
+        $result = [
+            'result' => true,
+            'msg' => 'success',
+        ];
+
+        try {
+            $companyRepository = new CompanyRepository();
+            $companyRepository->delCompanyInfoPic($companyId, $infoId);
+        } catch (Exception $e) {
+            $result['result'] = false;
+            $result['msg'] = $e->getMessage();
+        }
+        return view('company.proccessResult', ['adm' => $company, 'result' => $result]);
+    }
 }

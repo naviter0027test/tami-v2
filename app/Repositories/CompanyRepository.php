@@ -2,6 +2,7 @@
 
 namespace App\Repositories;
 
+use Illuminate\Support\Facades\Storage;
 use App\Company;
 use App\CompanyArea;
 use App\CompanyAreaRelation;
@@ -373,5 +374,21 @@ class CompanyRepository
                 ->get();
         }
         return $companyAreas;
+    }
+
+    public function delCompanyInfoPic($companyId, $picId) {
+        $company = Company::where('id', '=', $companyId)
+            ->first();
+        if(isset($company->id) == false) {
+            throw new Exception('廠商不存在');
+        }
+
+        $infoPath = "infoPath$picId";
+        $filePath = $company->$infoPath;
+        $root = config('filesystems')['disks']['uploads']['root'];
+        Storage::disk('uploads')->delete($filePath);
+
+        $company->$infoPath = '';
+        $company->save();
     }
 }

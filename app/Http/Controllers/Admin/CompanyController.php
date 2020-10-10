@@ -156,4 +156,22 @@ class CompanyController extends Controller
         }
         return view('admin.proccessResult', ['adm' => $admin, 'result' => $result]);
     }
+
+    public function removeCompanyInfo(Request $request, $companyId, $infoId) {
+        $admin = Session::get('admin');
+        $files = [];
+        $result = [
+            'result' => true,
+            'msg' => 'success',
+        ];
+
+        try {
+            $companyRepository = new CompanyRepository();
+            $companyRepository->delCompanyInfoPic($companyId, $infoId);
+        } catch (Exception $e) {
+            $result['result'] = false;
+            $result['msg'] = $e->getMessage();
+        }
+        return view('admin.proccessResult', ['adm' => $admin, 'result' => $result]);
+    }
 }
