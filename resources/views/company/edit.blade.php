@@ -40,6 +40,7 @@
                 @endif
                     更換如下:
                     <input type="file" name="logo2" /> </p>
+<!--
                 <h5><span>亮點資訊 標題</span></h5>
                 <p> <input type="text" name="title" value="{{ $result['company']->title }}" /> </p>
                 <h5><span>亮點資訊 標題(英文)</span></h5>
@@ -48,8 +49,9 @@
                 <p> <textarea name="contactDesc" >{{ $result['company']->contactDesc }}</textarea> </p>
                 <h5><span>亮點資訊 描述(英文)</span></h5>
                 <p> <textarea name="contactDescEn" >{{ $result['company']->contactDescEn }}</textarea> </p>
+-->
                 <h5><span>點亮資訊 如下圖，可放五張 (建議寬高: 250x210, Max:5M)</span></h5>
-                <img src="/images/tami-v3/company_info.png" class="schematic" />
+                <img src="/images/company2020_07_24/company_info.png" class="schematic" />
                 <h5><span>點亮資訊1</span></h5>
                 <p>
                 @if($result['company']->infoPath1 != '' && $result['company']->infoMode1 == 1)
@@ -137,7 +139,7 @@
                 </p>
                 <h5><span>前台公司頁右上圖 (建議寬高: 80x125, Max: 5M)</span></h5>
                 <h6>示意圖</h6>
-                <img src="/images/tami-v3/company_right_down.png" class="schematic" />
+                <img src="/images/company2020_07_24/company_right_down.png" class="schematic" />
                 <h6></h6>
                 <p>
                 @if($result['company']->companyRightInfo != '')

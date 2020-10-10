@@ -32,22 +32,22 @@ $(document).ready(function() {
         var frontMode = $(this).val();
         switch(frontMode) {
             case '1':
-                $('.frontModePic').attr('src', '/images/tami-v3/bg005.jpg');
+                $('.frontModePic').attr('src', '/images/black.jpg');
                 break;
             case '2':
-                $('.frontModePic').attr('src', '/images/tami-v3/bg004.jpg');
+                $('.frontModePic').attr('src', '/images/blue.jpg');
                 break;
             case '3':
-                $('.frontModePic').attr('src', '/images/tami-v3/bg001.jpg');
+                $('.frontModePic').attr('src', '/images/green.jpg');
                 break;
             case '4':
-                $('.frontModePic').attr('src', '/images/tami-v3/bg002.jpg');
+                $('.frontModePic').attr('src', '/images/red.jpg');
                 break;
             case '5':
-                $('.frontModePic').attr('src', '/images/tami-v3/bg006.jpg');
+                $('.frontModePic').attr('src', '/images/purple.jpg');
                 break;
             case '6':
-                $('.frontModePic').attr('src', '/images/tami-v3/bg003.jpg');
+                $('.frontModePic').attr('src', '/images/yellow.jpg');
                 break;
         }
     });
