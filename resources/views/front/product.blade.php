@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, viewport-fit=cover" />
-<meta name="description" content="">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=yes, viewport-fit=cover" />
+<meta name="title" content="{{ $result['title'] }}">
+<meta name="description" content="{{ $result['description'] }}">
 <meta name="author" content="">
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta name="lan" content="{{ $result['lan'] }}" />

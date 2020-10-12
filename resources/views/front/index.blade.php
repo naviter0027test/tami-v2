@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, viewport-fit=cover" />
-<meta name="description" content="">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=yes, viewport-fit=cover" />
+<meta name="title" content="{{ $result['title'] }}">
+<meta name="description" content="{{ $result['description'] }}">
 <meta name="author" content="">
 <meta http-equiv="Cache-Control" content="no-cache">
 
-<title>{{ trans('front/common.tami_online') }}</title>
+<title>{{ $result['title'] }}</title>
 
 <link rel="stylesheet" type="text/css" href="owl.carousel/owl.carousel.css">
 <link href="css/style.css" rel="stylesheet">
@@ -104,7 +105,7 @@
                     <div class="box">
                         <div class="title">{{ trans('front/index.commpany_area4') }}</div>
                         <div class="list_item">
-                        @foreach($result['companyAreas']['缝纫机']['companies'] as $company)
+                        @foreach($result['companyAreas']['縫紉機']['companies'] as $company)
                             <div class="item">
                                 <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
@@ -133,7 +134,7 @@
                         <div class="title">{{ trans('front/index.commpany_area2') }}</div>
                         <div class="mobile_arrow"><img src="images/icon_arrow_down_white.svg"></div>
                         <div class="list_item">
-                        @foreach($result['companyAreas']['鞋底加工及橡塑胶制鞋设备']['companies'] as $company)
+                        @foreach($result['companyAreas']['鞋底加工及像塑製鞋設備']['companies'] as $company)
                             <div class="item">
                                 <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
@@ -225,7 +226,7 @@
                         <div class="title">{{ trans('front/index.commpany_area3') }}</div>
                         <div class="mobile_arrow"><img src="images/icon_arrow_down_white.svg"></div>
                         <div class="list_item">
-                        @foreach($result['companyAreas']['鞋面成型及鞋帮机']['companies'] as $company)
+                        @foreach($result['companyAreas']['鞋面成型及鞋帮機']['companies'] as $company)
                             <div class="item">
                                 <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
@@ -336,7 +337,7 @@
                         <div class="title">{{ trans('front/index.commpany_area1') }}</div>
                         <div class="mobile_arrow"><img src="images/icon_arrow_down_white.svg"></div>
                         <div class="list_item">
-                        @foreach($result['companyAreas']['自动化设备与整厂规划']['companies'] as $company)
+                        @foreach($result['companyAreas']['自動化設備與整廠規劃']['companies'] as $company)
                             <div class="item">
                                 <a href="/{{ $result['lan'] }}/front/company/{{ $company->id }}">
                                     <div class="img"><img src="/uploads{{ $company->logo }}"></div>
@@ -465,6 +466,15 @@
 </div>
 <input type="hidden" name="mobileBackground" value="{{ $result['backMobile'] }}" />
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175242617-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175242617-7');
+</script>
 
 
 

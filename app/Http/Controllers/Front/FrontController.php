@@ -65,8 +65,10 @@ class FrontController extends Controller
                 $params['area3'] = 'images/platform_03_title_tw.png';
                 $params['area4'] = 'images/platform_01_title_tw.png';
                 $params['backMobile'] = '../images/tami_01_mobile.jpg';
-                $params['title'] = "M’SIA-PLAS 2020年馬來西亞國際橡塑橡膠暨模具展";
-                $params['description'] = "第31屆馬來西亞國際橡塑機械暨模具展M'SIA PlAS將於2020年在馬來西亞吉隆坡舉辦，是目前馬來西亞國內規模最大、影響最廣、專業性最強的地區性國際機械展覽盛會，12家來自台灣的優質廠商，立即點擊進入線上展覽會場觀展。";
+                $params['title'] = "2020年台灣鞋機拓銷越南及印尼線上台灣館";
+                $params['description'] = "台灣鞋機全球市占率約7成，年產量世界第一，在國際鞋業產業鏈中扮演了相當重要的角色，主要出口至越南、印尼等國家。
+今年因應疫情無法出國參展，機械公會特別偕同40家台灣主要鞋機廠商，以線上展的形式，將最先進的台灣鞋機產品展現給越南及印尼的買主，內容將包括鞋面成型及鞋幫機、鞋底加工及橡塑膠製鞋設備、縫紉機及針織機、自動化設備與整廠規劃等產品。
+";
             }
             break;
         case 'en':
@@ -81,9 +83,11 @@ class FrontController extends Controller
                 $params['area3'] = 'images/platform_03_title_eng.png';
                 $params['area4'] = 'images/platform_01_title_eng.png';
                 $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
-                $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
-                $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
-Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+                $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
+                $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
+                    This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
+                        sole process and rubber/plastic shoe making machinery, sewing machine & knitting machine, automatic equipment and turnkey solution, etc.
+';
             }
             break;
         case 'id':
@@ -98,9 +102,11 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
                 $params['area3'] = 'images/platform_03_title_indonesian.png';
                 $params['area4'] = 'images/platform_01_title_indonesian.png';
                 $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
-                $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
-                $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
-Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+                $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
+                $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
+                    This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
+                        sole process and rubber/plastic shoe making machinery, sewing machine & knitting machine, automatic equipment and turnkey solution, etc.
+';
             }
             break;
         case 'vi':
@@ -115,9 +121,11 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
                 $params['area3'] = 'images/platform_03_title_vietbam.png';
                 $params['area4'] = 'images/platform_01_title_vietbam.png';
                 $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
-                $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
-                $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
-Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+                $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
+                $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
+                    This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
+                        sole process and rubber/plastic shoe making machinery, sewing machine & knitting machine, automatic equipment and turnkey solution, etc.
+';
             }
             break;
         }
@@ -172,8 +180,10 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
                 $company->nameShow = $company->name;
                 $company->titleShow = $company->title;
                 $company->contactDescShow = nl2br($company->contactDesc);
-                $params['title'] = "M’SIA-PLAS 2020年馬來西亞國際橡塑橡膠暨模具展";
-                $params['description'] = "第31屆馬來西亞國際橡塑機械暨模具展M'SIA PlAS將於2020年在馬來西亞吉隆坡舉辦，是目前馬來西亞國內規模最大、影響最廣、專業性最強的地區性國際機械展覽盛會，12家來自台灣的優質廠商，立即點擊進入線上展覽會場觀展。";
+                $params['title'] = "2020年台灣鞋機拓銷越南及印尼線上台灣館";
+                $params['description'] = "台灣鞋機全球市占率約7成，年產量世界第一，在國際鞋業產業鏈中扮演了相當重要的角色，主要出口至越南、印尼等國家。
+今年因應疫情無法出國參展，機械公會特別偕同40家台灣主要鞋機廠商，以線上展的形式，將最先進的台灣鞋機產品展現給越南及印尼的買主，內容將包括鞋面成型及鞋幫機、鞋底加工及橡塑膠製鞋設備、縫紉機及針織機、自動化設備與整廠規劃等產品。
+";
                 break;
             case 'en':
             case 'id':
@@ -181,9 +191,11 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
                 $company->nameShow = $company->nameEn;
                 $company->titleShow = $company->titleEn;
                 $company->contactDescShow = nl2br($company->contactDescEn);
-                $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
-                $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
-Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+                $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
+                $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
+                    This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
+                        sole process and rubber/plastic shoe making machinery, sewing machine & knitting machine, automatic equipment and turnkey solution, etc.
+';
                 break;
             }
         } catch(Exception $e) {
@@ -251,8 +263,10 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
         switch($params['lan']) {
         case 'cn':
             $company->nameShow = $company->name;
-            $params['title'] = "M’SIA-PLAS 2020年馬來西亞國際橡塑橡膠暨模具展";
-            $params['description'] = "第31屆馬來西亞國際橡塑機械暨模具展M'SIA PlAS將於2020年在馬來西亞吉隆坡舉辦，是目前馬來西亞國內規模最大、影響最廣、專業性最強的地區性國際機械展覽盛會，12家來自台灣的優質廠商，立即點擊進入線上展覽會場觀展。";
+            $params['title'] = "2020年台灣鞋機拓銷越南及印尼線上台灣館";
+            $params['description'] = "台灣鞋機全球市占率約7成，年產量世界第一，在國際鞋業產業鏈中扮演了相當重要的角色，主要出口至越南、印尼等國家。
+今年因應疫情無法出國參展，機械公會特別偕同40家台灣主要鞋機廠商，以線上展的形式，將最先進的台灣鞋機產品展現給越南及印尼的買主，內容將包括鞋面成型及鞋幫機、鞋底加工及橡塑膠製鞋設備、縫紉機及針織機、自動化設備與整廠規劃等產品。
+";
             $params['detailBtnBg01'] = "/images/detail_btn_01_tw.png";
             $params['detailBtnBg02'] = "/images/detail_btn_02_tw.png";
             $params['detailBtnBg03'] = "/images/detail_btn_03_tw.png";
@@ -264,9 +278,11 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
         case 'id':
         case 'vi':
             $company->nameShow = $company->nameEn;
-            $params['title'] = "Malaysia International Plastic, Mould & Tools Exhibition";
-            $params['description'] = '"International Exhibition for Plastic & Plastic Products Industry"
-                Malaysia International Plastic, Mould & Tools Exhibition will display products like Plastic Injection & Blow, Molding Machinery, Plastic Welding Equipment, Sealing Machine, Material Formulating and Compounding, Mould & Dies, Chemicals & Raw Materials, Extrusion Machinery, Coating Compounds, Auxiliary & Testing Equipment, Semi-Finished Products, Plastic Tooling & Engineering Products, Bio-Plastics & Degradable Plastic and much more.';
+                $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
+                $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
+                    This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
+                        sole process and rubber/plastic shoe making machinery, sewing machine & knitting machine, automatic equipment and turnkey solution, etc.
+';
             $params['detailBtnBg01'] = "/images/detail_btn_01_en.png";
             $params['detailBtnBg02'] = "/images/detail_btn_02_en.png";
             $params['detailBtnBg03'] = "/images/detail_btn_03_en.png";
