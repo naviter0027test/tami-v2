@@ -63,7 +63,7 @@
                     <div id="infoEn" ></div>
                     <input type="hidden" name="infoEn" value="{{ $result['product']->infoEn }}" />
                 </p>
-                <h5><span>DM</span></h5>
+                <h5><span>DM (Max:5M)</span></h5>
                 @if($result['product']->dm != '')
                     <a href="/product{{ $result['product']->dm }}"  >連結</a> <br />
                 @else
