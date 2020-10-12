@@ -27,7 +27,7 @@
                 @endforeach
                     <a href="#" class="addEmail"><i class="glyphicon glyphicon-add" >+</i></a>
                 </p>
-                <h5><span>產品圖片</span></h5>
+                <h5><span>產品圖片 (Max:5M)</span></h5>
                 @if($result['product']->picture1 != '')
                     <img src="/product{{ $result['product']->picture1 }}" class="custPic" /> <br />
                 @else

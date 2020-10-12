@@ -386,7 +386,8 @@ class CompanyRepository
         $infoPath = "infoPath$picId";
         $filePath = $company->$infoPath;
         $root = config('filesystems')['disks']['uploads']['root'];
-        Storage::disk('uploads')->delete($filePath);
+        if(is_file($root. $filePath) == true)
+            Storage::disk('uploads')->delete($filePath);
 
         $company->$infoPath = '';
         $company->save();

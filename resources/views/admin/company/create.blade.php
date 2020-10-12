@@ -21,9 +21,9 @@
                 <p> <input type="text" name="name" /> </p>
                 <h5><span>廠商名稱(英文)</span></h5>
                 <p> <input type="text" name="nameEn" /> </p>
-                <h5><span>Logo</span> </h5>
+                <h5><span>Logo (建議寬高: 150x150, Max:5M)</span> </h5>
                 <p> <input type="file" name="logo" /> </p>
-                <h5><span>前台公司頁 Logo (建議寬高: 125x50)</span> </h5>
+                <h5><span>前台公司頁 Logo (建議寬高: 125x50, Max:5M)</span> </h5>
                 <p> <input type="file" name="logo2" /> </p>
                 <h5><span>是否啟用</span></h5>
                 <p> 

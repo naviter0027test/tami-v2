@@ -56,4 +56,17 @@ $(document).ready(function() {
     $('.frontMode').trigger('change');
 
     $('.companyAreaId').on('change', companyAreaIdChange);
+
+    $('.form1').submit(function() {
+        for(var i = 0;i < $('input[type=file]').length;++i) {
+            if(typeof($('input[type=file]')[i].files[0]) != 'undefined') {
+                var tmpSize = $('input[type=file]')[i].files[0].size / 1024 / 1024;
+                var filename = $('input[type=file]')[i].files[0].name;
+                if(tmpSize > 5) {
+                    alert(filename+ " 超過5M");
+                    return false;
+                }
+            }
+        }
+    });
 });

@@ -22,7 +22,7 @@
                     <input type="email" name="email[]" />
                     <a href="#" class="addEmail"><i class="glyphicon glyphicon-add" >+</i></a>
                 </p>
-                <h5><span>產品圖片</span></h5>
+                <h5><span>產品圖片 (Max:5M)</span></h5>
                 <p> <input type="file" name="picture1" /> </p>
 <!--
                 <h5><span>產品左下圖片1</span></h5>

@@ -22,7 +22,7 @@
                 <p> <input type="text" name="name" value="{{ $result['company']->name }}" /> </p>
                 <h5><span>廠商名稱(英文)</span></h5>
                 <p> <input type="text" name="nameEn" value="{{ $result['company']->nameEn }}" /> </p>
-                <h5><span>Logo (建議寬高: 150x150)</span> </h5>
+                <h5><span>Logo (建議寬高: 150x150, Max:5M)</span> </h5>
                 <p>
                 @if($result['company']->logo != '')
                     <img src="/uploads{{ $result['company']->logo }}" class="custPic" /> <br />
@@ -31,7 +31,7 @@
                 @endif
                     更換如下:
                     <input type="file" name="logo" /> </p>
-                <h5><span>前台公司頁 Logo (建議寬高: 125x50)</span> </h5>
+                <h5><span>前台公司頁 Logo (建議寬高: 125x50, Max:5M)</span> </h5>
                 <p>
                 @if($result['company']->logo2 != '')
                     <img src="/uploads{{ $result['company']->logo2 }}" class="custPic" /> <br />
