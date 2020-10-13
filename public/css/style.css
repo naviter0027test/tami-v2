@@ -302,7 +302,7 @@ h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0;}
 .home_list .outer .popup_block .box .list_item .item a .info p{ font-size:9px; overflow: hidden;  text-overflow: ellipsis;
     display: -webkit-box;  -webkit-line-clamp: 1;  -webkit-box-orient: vertical;}
 
-.home_list .outer #block01{ left:6vw; top:12vw;}
+.home_list .outer #block01{ left:-6vw; top:6vw;}
 .home_list .outer #block02{ left:31vw; top:2.5vw;}
 .home_list .outer #block03{ left: 10vw; top: 24vw;}
 .home_list .outer #block04{ left:54vw; top:21vw;}
@@ -462,7 +462,7 @@ h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0;}
 	
 	.home_list .outer .block_img img {  width: 75%;}	
 	.home_list .outer #block01 {
-		left: calc(1280px * 0.0001);
+		left: calc(1280px * -0.05);
 		top: calc(1280px * 0.05);
 	}
 	.home_list .outer #block02 {

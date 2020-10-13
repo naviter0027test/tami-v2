@@ -22,14 +22,6 @@
                 <p> {{ $result['contact']->email }} </p>
                 <h5>手機</h5>
                 <p> {{ $result['contact']->phone }} </p>
-                <h5>稱謂</h5>
-                <p> {{ $result['contact']['jobTitle']->jobTitle }} </p>
-                <h5>產業別</h5>
-                <p>
-                @foreach($result['contact']['industries'] as $industry)
-                {{ $industry->name }} &nbsp;
-                @endforeach
-                </p>
                 <h5>內容</h5>
                 <p> 
                     <textarea type="text" name="content" readonly> {{ $result['contact']->content }} </textarea>
