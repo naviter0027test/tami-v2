@@ -110,4 +110,9 @@ $(document).ready(function() {
     $(window).resize(function () {
         col02ImgImgResize();
     });
+
+    setTimeout(function() {
+        console.log('test');
+        $('.body_company').css('position', '');
+    }, 2000);
 });

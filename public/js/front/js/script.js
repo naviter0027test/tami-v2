@@ -94,6 +94,7 @@ function set_slider(){
 			margin:0,
 			nav:true,
 			items:1,
+                        lazyLoad:true,
 			scrollbarType: "scroll"
 		})
 	}
