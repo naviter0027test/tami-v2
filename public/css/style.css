@@ -680,15 +680,16 @@ h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0;}
 		
 	.body_popup_active .overly{height: 130vw;}
 	.home_list .outer .home_title{ font-size:16px;}
-	.home_list .outer #block01{ left:-7vw;}
-	.home_list .outer #block01 img{ width:55%;}
+	.home_list .outer .block_img img{ width:95%;}
+	.home_list .outer #block01{ left:-7vw;top: 31vw;}
+	.home_list .outer #block01 img{ width:66%;}
+	.home_list .outer #block03{ top:70vw;}
+	.home_list .outer #block03 img{ width:100%;}
+	.home_list .outer #block04 {left: -3vw;top: 131vw;	}	
+	.home_list .outer #block04 img{ width:80%;}
 	.body_popup_active .overly{ height:95vw;}
 	.body_popup_active .mobile_div{ height: 90vw; min-height: 90vw;}
 	.home_list .outer .popup_block .box .list_item .item a .info h3{ font-size:13px;}
 	.home_list .outer .popup_block .box .list_item .item a .info p{ font-size:8px;}
-	.home_list .outer #block04 {
-		left: -2vw;
-		top: 133vw;
-	}
 	
 }
