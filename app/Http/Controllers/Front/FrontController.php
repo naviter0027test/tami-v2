@@ -64,7 +64,7 @@ class FrontController extends Controller
                 $params['area2'] = 'images/platform_02_title_tw.png';
                 $params['area3'] = 'images/platform_03_title_tw.png';
                 $params['area4'] = 'images/platform_01_title_tw.png';
-                $params['backMobile'] = '../images/tami_01_mobile.jpg';
+                $params['backMobile'] = '../images/tami_01_mobile_tw.jpg';
                 $params['title'] = "2020年台灣鞋機拓銷越南及印尼線上台灣館";
                 $params['description'] = "台灣鞋機全球市占率約7成，年產量世界第一，在國際鞋業產業鏈中扮演了相當重要的角色，主要出口至越南、印尼等國家。
 今年因應疫情無法出國參展，機械公會特別偕同40家台灣主要鞋機廠商，以線上展的形式，將最先進的台灣鞋機產品展現給越南及印尼的買主，內容將包括鞋面成型及鞋幫機、鞋底加工及橡塑膠製鞋設備、縫紉機及針織機、自動化設備與整廠規劃等產品。
@@ -101,7 +101,7 @@ class FrontController extends Controller
                 $params['area2'] = 'images/platform_02_title_indonesian.png';
                 $params['area3'] = 'images/platform_03_title_indonesian.png';
                 $params['area4'] = 'images/platform_01_title_indonesian.png';
-                $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
+                $params['backMobile'] = '../images/tami_01_mobile_indonesian.jpg';
                 $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
                 $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
                     This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
@@ -120,7 +120,7 @@ class FrontController extends Controller
                 $params['area2'] = 'images/platform_02_title_vietbam.png';
                 $params['area3'] = 'images/platform_03_title_vietbam.png';
                 $params['area4'] = 'images/platform_01_title_vietbam.png';
-                $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
+                $params['backMobile'] = '../images/tami_01_mobile_vietbam.jpg';
                 $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
                 $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
                     This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
