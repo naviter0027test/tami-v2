@@ -10,8 +10,8 @@
 
 <title>{{ $result['title'] }}</title>
 
-<link rel="stylesheet" type="text/css" href="owl.carousel/owl.carousel.css">
-<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/owl.carousel/owl.carousel.css">
+<link href="/css/style.css" rel="stylesheet">
 <!-- Google Tag Manager -->
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -46,69 +46,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>              
             <div class="mobile_div">  
             	<div class="overly" title="Close with clicked !!" alt="Close with clicked !!"></div>
-                <div class="mobile_black"><img src="images/icon_back_arrow_mobile.svg"></div>
+                <div class="mobile_black"><img src="/images/icon_back_arrow_mobile.svg"></div>
                 <div class="version">
-                    <a href="cn/" class="{{ $result['lan'] == 'cn' ? 'active' : '' }}">中文</a>
-                    <a href="en/" class="{{ $result['lan'] == 'en' ? 'active' : '' }}">ENG</a>
-                    <a href="id/" class="{{ $result['lan'] == 'id' ? 'active' : '' }}">IND</a>
-                    <a href="vi/" class="{{ $result['lan'] == 'vi' ? 'active' : '' }}">VIE</a>
+                    <a href="/cn" class="{{ $result['lan'] == 'cn' ? 'active' : '' }}">中文</a>
+                    <a href="/en" class="{{ $result['lan'] == 'en' ? 'active' : '' }}">ENG</a>
+                    <a href="/id" class="{{ $result['lan'] == 'id' ? 'active' : '' }}">IND</a>
+                    <a href="/vi" class="{{ $result['lan'] == 'vi' ? 'active' : '' }}">VIE</a>
                 </div>                
                 <div id="block01" class="block_img" data-id="popup01">
-                    <img src="images/platform_01_block.png" class="block"/>
+                    <img src="/images/platform_01_block.png" class="block"/>
                     <img src="{{ $result['area4'] }}" class="title"/>
                     <div class="animate">
-                        <div class="block01_animate"><img src="images/platform_01_01.png"></div>
-                        <div class="block01_animate"><img src="images/platform_01_02.png"></div> 
-                        <div class="block01_animate"><img src="images/platform_01_03.png"></div> 
-                        <div class="block01_animate"><img src="images/platform_01_04.png"></div>
-                        <div class="block01_animate"><img src="images/platform_01_05.png"></div>
-                        <div class="block01_animate"><img src="images/platform_01_04.png"></div>
-                        <div class="block01_animate"><img src="images/platform_01_03.png"></div> 
-                        <div class="block01_animate"><img src="images/platform_01_02.png"></div>                                           
+                        <div class="block01_animate"><img src="/images/platform_01_01.png"></div>
+                        <div class="block01_animate"><img src="/images/platform_01_02.png"></div> 
+                        <div class="block01_animate"><img src="/images/platform_01_03.png"></div> 
+                        <div class="block01_animate"><img src="/images/platform_01_04.png"></div>
+                        <div class="block01_animate"><img src="/images/platform_01_05.png"></div>
+                        <div class="block01_animate"><img src="/images/platform_01_04.png"></div>
+                        <div class="block01_animate"><img src="/images/platform_01_03.png"></div> 
+                        <div class="block01_animate"><img src="/images/platform_01_02.png"></div>                                           
                     </div>
                     <div class="mobile_title">{{ trans('front/index.commpany_area4') }}</div>
                 </div>
                 <div id="block02" class="block_img" data-id="popup02">
-                    <img src="images/platform_02_block.png" class="block"/>
+                    <img src="/images/platform_02_block.png" class="block"/>
                     <img src="{{ $result['area2'] }}" class="title"/>
                     <div class="animate">
-                        <div class="block02_animate"><img src="images/platform_02_01.png"></div>
-                        <div class="block02_animate"><img src="images/platform_02_02.png"></div>
-                        <div class="block02_animate"><img src="images/platform_02_03.png"></div>
+                        <div class="block02_animate"><img src="/images/platform_02_01.png"></div>
+                        <div class="block02_animate"><img src="/images/platform_02_02.png"></div>
+                        <div class="block02_animate"><img src="/images/platform_02_03.png"></div>
                     </div>
                     <div class="mobile_title">{{ trans('front/index.commpany_area2') }}</div>
                 </div>
                 <div id="block03" class="block_img" data-id="popup03">
-                    <img src="images/platform_03_block.png" class="block"/>
+                    <img src="/images/platform_03_block.png" class="block"/>
                     <img src="{{ $result['area3'] }}" class="title"/>
                     <div class="animate">
-                        <div class="block03_animate"><img src="images/platform_03_01.png"></div>
-                        <div class="block03_animate"><img src="images/platform_03_02.png"></div>    
-                        <div class="block03_animate"><img src="images/platform_03_03.png"></div> 
-                        <div class="block03_animate"><img src="images/platform_03_04.png"></div> 
-                        <div class="block03_animate"><img src="images/platform_03_05.png"></div> 
-                        <div class="block03_animate"><img src="images/platform_03_06.png"></div> 
-                        <div class="block03_animate"><img src="images/platform_03_05.png"></div> 
-                        <div class="block03_animate"><img src="images/platform_03_04.png"></div> 
-                        <div class="block03_animate"><img src="images/platform_03_03.png"></div> 
-                        <div class="block03_animate"><img src="images/platform_03_02.png"></div>                    
+                        <div class="block03_animate"><img src="/images/platform_03_01.png"></div>
+                        <div class="block03_animate"><img src="/images/platform_03_02.png"></div>    
+                        <div class="block03_animate"><img src="/images/platform_03_03.png"></div> 
+                        <div class="block03_animate"><img src="/images/platform_03_04.png"></div> 
+                        <div class="block03_animate"><img src="/images/platform_03_05.png"></div> 
+                        <div class="block03_animate"><img src="/images/platform_03_06.png"></div> 
+                        <div class="block03_animate"><img src="/images/platform_03_05.png"></div> 
+                        <div class="block03_animate"><img src="/images/platform_03_04.png"></div> 
+                        <div class="block03_animate"><img src="/images/platform_03_03.png"></div> 
+                        <div class="block03_animate"><img src="/images/platform_03_02.png"></div>                    
                     </div>
                     <div class="mobile_title">{{ trans('front/index.commpany_area3') }}</div>
                 </div>
                 <div id="block04" class="block_img" data-id="popup04">
-                    <img src="images/platform_04_block.png" class="block"/>
+                    <img src="/images/platform_04_block.png" class="block"/>
                     <img src="{{ $result['area1'] }}" class="title"/>
                     <div class="animate">
-                        <div class="block04_animate"><img src="images/platform_04_01.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_02.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_03.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_04.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_05.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_06.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_05.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_04.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_03.png"></div>
-                        <div class="block04_animate"><img src="images/platform_04_02.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_01.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_02.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_03.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_04.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_05.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_06.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_05.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_04.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_03.png"></div>
+                        <div class="block04_animate"><img src="/images/platform_04_02.png"></div>
                     </div>
                     <div class="mobile_title">{{ trans('front/index.commpany_area1') }}</div>
                 </div>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--
                             <div class="item">
                                 <a href="front/company">
-                                    <div class="img"><img src="images/logo/logo_02.png"></div>
+                                    <div class="img"><img src="/images/logo/logo_02.png"></div>
                                     <div class="info">
                                         <h3>启翔股份有限公司</h3>
                                         <p>CHEE SIANG INDUSTRIAL CO., LTD.</p>
@@ -146,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div id="popup02" class="popup_block">
                     <div class="box">
                         <div class="title">{{ trans('front/index.commpany_area2') }}</div>
-                        <div class="mobile_arrow"><img src="images/icon_arrow_down_white.svg"></div>
+                        <div class="mobile_arrow"><img src="/images/icon_arrow_down_white.svg"></div>
                         <div class="list_item">
                         @foreach($result['companyAreas']['鞋底加工及像塑製鞋設備']['companies'] as $company)
                             <div class="item">
@@ -238,7 +238,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div id="popup03" class="popup_block">
                     <div class="box">
                         <div class="title">{{ trans('front/index.commpany_area3') }}</div>
-                        <div class="mobile_arrow"><img src="images/icon_arrow_down_white.svg"></div>
+                        <div class="mobile_arrow"><img src="/images/icon_arrow_down_white.svg"></div>
                         <div class="list_item">
                         @foreach($result['companyAreas']['鞋面成型及鞋帮機']['companies'] as $company)
                             <div class="item">
@@ -349,7 +349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div id="popup04" class="popup_block">
                     <div class="box">
                         <div class="title">{{ trans('front/index.commpany_area1') }}</div>
-                        <div class="mobile_arrow"><img src="images/icon_arrow_down_white.svg"></div>
+                        <div class="mobile_arrow"><img src="/images/icon_arrow_down_white.svg"></div>
                         <div class="list_item">
                         @foreach($result['companyAreas']['自動化設備與整廠規劃']['companies'] as $company)
                             <div class="item">
