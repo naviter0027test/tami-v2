@@ -8,6 +8,7 @@ use \App\Http\Controllers\Controller;
 use App\Repositories\CompanyRepository;
 use App\Repositories\ProductRepository;
 use App\Repositories\ContactRepository;
+use App\Repositories\SysConfigRepository;
 use Session;
 use Exception;
 
@@ -29,9 +30,10 @@ class FrontController extends Controller
             \App::setLocale($params['lan']);
         }
         $companyRepository = new CompanyRepository();
+        $sysConfigRepository = new SysConfigRepository();
         $params['companyAreas'] = $companyRepository->getAreaWithCompany();
-        $watchAmount = env('WATCH_AMOUNT', 0);
-        $this->setEnvironmentValue(['WATCH_AMOUNT' => ++$watchAmount]);
+        $watchAmount = $sysConfigRepository->getWatchAmount();
+        $sysConfigRepository->setWatchAmount(++$watchAmount);
         $params['watchAmount'] = str_pad($watchAmount, 5, '0', STR_PAD_LEFT);
 
         foreach ($params['companyAreas'] as $companyArea) {
