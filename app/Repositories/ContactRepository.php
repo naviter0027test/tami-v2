@@ -156,7 +156,22 @@ class ContactRepository
             ->first();
         $emails = explode(',', $product->emailMulti);
         foreach($emails as $email)
-            if(trim($email) != '')
+            if(trim($email) != '') {
+                if(function_exists('curl_init') == false)
+                    throw new Exception('curl_init not exists');
+                $testTitle = env('APP_ENV') == 'local' ? '[Test] ' : '';
+                $mailTitle = env('CONTACT_TITLE', '台湾鞋機線上展');
+                $appSmall = env('APP_SMALL');
+
+                $postData = array(
+                    'companyName' => $company->name,
+                    'mailTo' => $email,
+                    'mailTitle' => "$testTitle <$mailTitle 詢問信函>",
+                    'content' => $params['content'],
+                    'contactEditUrl' => url('/company/contact/edit', [$params['contactId']] ),
+                );
+                $this->curlMail($postData);
+                /*
                 \Mail::send('email.contactNotify', ['company' => $company, 'params' => $params], function($message) use ($company, $product, $email) {
                     $fromAddr = Config::get('mail.from.address');
                     $fromName = Config::get('mail.from.name');
@@ -167,8 +182,24 @@ class ContactRepository
                     \Log::info('mail product');
                     $message->to($email, $company->name)->subject("$testTitle <$appSmall $mailTitle 詢問信函>");
                 });
+                 */
+            }
             else
                 \Log::info('product id:['. $product->id. '], name:['. $product->name. '] email is empty');
+    }
+
+    public function curlMail($postData) {
+        $ch = curl_init();
+        curl_setopt($ch , CURLOPT_URL , "http://www.tamitwonlinemsiaplas.com/borrow/mail");
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/x-www-form-urlencoded'));
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query( $postData ));
+        $result = curl_exec($ch);
+        curl_close($ch);
+        $resultArr = json_decode($result, true);
+        if($resultArr['result'] == false)
+            throw new Exception('curl err: '. $result['msg']);
     }
 
     public function statisticsJobTitleListByAdmin() {

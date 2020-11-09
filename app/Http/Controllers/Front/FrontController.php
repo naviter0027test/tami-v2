@@ -55,15 +55,15 @@ class FrontController extends Controller
         switch($params['lan']) {
         case 'cn':
             if($frontDir == 'front-v3') {
-                $params['logo'] = 'images/tami-v3/home_logo_cn.png';
-                $params['logoMobile'] = 'images/tami-v3/home_logo_cn_mobile.png';
+                $params['logo'] = '/images/tami-v3/home_logo_cn.png';
+                $params['logoMobile'] = '/images/tami-v3/home_logo_cn_mobile.png';
             } else {
-                $params['logo'] = 'images/home_logo.gif';
-                $params['logoMobile'] = 'images/home_logo_mobile.png';
-                $params['area1'] = 'images/platform_04_title_tw.png';
-                $params['area2'] = 'images/platform_02_title_tw.png';
-                $params['area3'] = 'images/platform_03_title_tw.png';
-                $params['area4'] = 'images/platform_01_title_tw.png';
+                $params['logo'] = '/images/home_logo.gif';
+                $params['logoMobile'] = '/images/home_logo_mobile.png';
+                $params['area1'] = '/images/platform_04_title_tw.png';
+                $params['area2'] = '/images/platform_02_title_tw.png';
+                $params['area3'] = '/images/platform_03_title_tw.png';
+                $params['area4'] = '/images/platform_01_title_tw.png';
                 $params['backMobile'] = '../images/tami_01_mobile_tw.jpg';
                 $params['title'] = "2020年台灣鞋機拓銷越南及印尼線上台灣館";
                 $params['description'] = "台灣鞋機全球市占率約7成，年產量世界第一，在國際鞋業產業鏈中扮演了相當重要的角色，主要出口至越南、印尼等國家。
@@ -73,15 +73,15 @@ class FrontController extends Controller
             break;
         case 'en':
             if($frontDir == 'front-v3') {
-                $params['logo'] = 'images/tami-v3/home_logo_eng.png';
-                $params['logoMobile'] = 'images/tami-v3/home_logo_eng_mobile.png';
+                $params['logo'] = '/images/tami-v3/home_logo_eng.png';
+                $params['logoMobile'] = '/images/tami-v3/home_logo_eng_mobile.png';
             } else {
-                $params['logo'] = 'images/home_logo_e2.gif';
-                $params['logoMobile'] = 'images/home_logo_mobile.png';
-                $params['area1'] = 'images/platform_04_title_eng.png';
-                $params['area2'] = 'images/platform_02_title_eng.png';
-                $params['area3'] = 'images/platform_03_title_eng.png';
-                $params['area4'] = 'images/platform_01_title_eng.png';
+                $params['logo'] = '/images/home_logo_e2.gif';
+                $params['logoMobile'] = '/images/home_logo_mobile.png';
+                $params['area1'] = '/images/platform_04_title_eng.png';
+                $params['area2'] = '/images/platform_02_title_eng.png';
+                $params['area3'] = '/images/platform_03_title_eng.png';
+                $params['area4'] = '/images/platform_01_title_eng.png';
                 $params['backMobile'] = '../images/tami_01_mobile_eng.jpg';
                 $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
                 $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
@@ -92,15 +92,15 @@ class FrontController extends Controller
             break;
         case 'id':
             if($frontDir == 'front-v3') {
-                $params['logo'] = 'images/tami-v3/home_logo_eng.png';
-                $params['logoMobile'] = 'images/tami-v3/home_logo_eng_mobile.png';
+                $params['logo'] = '/images/tami-v3/home_logo_eng.png';
+                $params['logoMobile'] = '/images/tami-v3/home_logo_eng_mobile.png';
             } else {
-                $params['logo'] = 'images/home_logo_e2.gif';
-                $params['logoMobile'] = 'images/home_logo_mobile.png';
-                $params['area1'] = 'images/platform_04_title_indonesian.png';
-                $params['area2'] = 'images/platform_02_title_indonesian.png';
-                $params['area3'] = 'images/platform_03_title_indonesian.png';
-                $params['area4'] = 'images/platform_01_title_indonesian.png';
+                $params['logo'] = '/images/home_logo_e2.gif';
+                $params['logoMobile'] = '/images/home_logo_mobile.png';
+                $params['area1'] = '/images/platform_04_title_indonesian.png';
+                $params['area2'] = '/images/platform_02_title_indonesian.png';
+                $params['area3'] = '/images/platform_03_title_indonesian.png';
+                $params['area4'] = '/images/platform_01_title_indonesian.png';
                 $params['backMobile'] = '../images/tami_01_mobile_indonesian.jpg';
                 $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
                 $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
@@ -111,15 +111,15 @@ class FrontController extends Controller
             break;
         case 'vi':
             if($frontDir == 'front-v3') {
-                $params['logo'] = 'images/tami-v3/home_logo_eng.png';
-                $params['logoMobile'] = 'images/tami-v3/home_logo_eng_mobile.png';
+                $params['logo'] = '/images/tami-v3/home_logo_eng.png';
+                $params['logoMobile'] = '/images/tami-v3/home_logo_eng_mobile.png';
             } else {
-                $params['logo'] = 'images/home_logo_e2.gif';
-                $params['logoMobile'] = 'images/home_logo_mobile.png';
-                $params['area1'] = 'images/platform_04_title_vietbam.png';
-                $params['area2'] = 'images/platform_02_title_vietbam.png';
-                $params['area3'] = 'images/platform_03_title_vietbam.png';
-                $params['area4'] = 'images/platform_01_title_vietbam.png';
+                $params['logo'] = '/images/home_logo_e2.gif';
+                $params['logoMobile'] = '/images/home_logo_mobile.png';
+                $params['area1'] = '/images/platform_04_title_vietbam.png';
+                $params['area2'] = '/images/platform_02_title_vietbam.png';
+                $params['area3'] = '/images/platform_03_title_vietbam.png';
+                $params['area4'] = '/images/platform_01_title_vietbam.png';
                 $params['backMobile'] = '../images/tami_01_mobile_vietbam.jpg';
                 $params['title'] = "Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia";
                 $params['description'] = 'Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.

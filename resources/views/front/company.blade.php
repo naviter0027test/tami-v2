@@ -61,10 +61,12 @@
                     <!--
                     <img src="/images/company_img001.jpg" class="infoPathImg">
                     -->
-                    @if(trim($company->infoPath1) == '')
+                    @if(trim($company->infoPath1) == '' && trim($company->infoPath2) == '')
                     <img src="/images/company_img001.jpg" class="infoPathImg">
                     @elseif(trim($company->infoPath1) != '')
                     <img src="/uploads{{ $company->infoPath1 }}" class="infoPathImg">
+                    @elseif(trim($company->infoPath2) != '')
+                    <img src="/uploads{{ $company->infoPath2 }}" class="infoPathImg">
                     @endif
                     </div>
                     @if(trim($company->infoPath1) != '')
