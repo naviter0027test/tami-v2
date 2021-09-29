@@ -189,6 +189,7 @@ class ContactRepository
     }
 
     public function curlMail($postData) {
+        /*
         $ch = curl_init();
         curl_setopt($ch , CURLOPT_URL , "http://www.tamitwonlinemsiaplas.com/borrow/mail");
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/x-www-form-urlencoded'));
@@ -200,6 +201,7 @@ class ContactRepository
         $resultArr = json_decode($result, true);
         if($resultArr['result'] == false)
             throw new Exception('curl err: '. $result['msg']);
+         */
     }
 
     public function statisticsJobTitleListByAdmin() {
