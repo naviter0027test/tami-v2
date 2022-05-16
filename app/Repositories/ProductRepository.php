@@ -8,6 +8,23 @@ use Exception;
 class ProductRepository
 {
     public function create($params, $company, $files) {
+        if(isset($files['picture1'])) {
+            $ext = $files['picture1']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+        if(isset($files['picture2'])) {
+            $ext = $files['picture2']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+        if(isset($files['picture3'])) {
+            $ext = $files['picture3']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+        if(isset($files['dm'])) {
+            $ext = $files['dm']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+
         $product = new Product();
         $product->name = isset($params['name']) ? $params['name'] : '';
         $product->nameEn = isset($params['nameEn']) ? $params['nameEn'] : '';
@@ -102,6 +119,23 @@ class ProductRepository
     }
 
     public function updateById($id, $params, $admin = null, $files) {
+        if(isset($files['picture1'])) {
+            $ext = $files['picture1']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+        if(isset($files['picture2'])) {
+            $ext = $files['picture2']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+        if(isset($files['picture3'])) {
+            $ext = $files['picture3']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+        if(isset($files['dm'])) {
+            $ext = $files['dm']->getClientOriginalExtension();
+            $this->checkExt($ext);
+        }
+
         $product = Product::where('id', '=', $id)
             ->first();
         if(isset($product->id) == false)
@@ -176,5 +210,12 @@ class ProductRepository
             ->orderBy('id', 'desc')
             ->get();
         return $products;
+    }
+
+    public function checkExt($ext) {
+        $validExtArr = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'tiff', 'pdf'];
+        $ext = strtolower(trim($ext));
+        if(in_array($ext, $validExtArr) == false)
+            throw new Exception('上傳檔案格式限定:'. implode(',', $validExtArr) );
     }
 }
